@@ -5,31 +5,35 @@ import SignIn from "@/app/sign_in/page";
 const Nav = () => {
   return (
     <>
-      <div className="flex gap-60 navbar pt-4 pb-4 text-gray-600 bg-white">
-        <div className="pt-3 ml-6">
-          <h1 className="text-xl font-bold font-sans">MediCare</h1>
-        </div>
+      {/* Navbar Session */}
+      <div className="flex justify-between bg-white py-2 px-10 text-gray-800">
         <div>
-          <ul className="flex gap-40 pt-4 pb-4">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/about">About us</Link>
-            </li>
-            <li>How it works</li>
-            <li>Contact us</li>
-            <li>Admin Login</li>
-          </ul>
+          <h1 className="font-bold text-5xl font-bold italic">MediCare</h1>
         </div>
+
         <div>
-          <ul className="sign_up flex pt-4 pb-4 gap-20 mx-4">
+          <ul className="flex gap-40 text-xl pt-4  ">
+            <Link href="/">
+              <li>Home</li>
+            </Link>
+            <Link href="/about">
+              <li>About</li>
+            </Link>
+            <li>Find Hospitals</li>
             <li>
-            <Link href="/sign_in">Sign In</Link>
+              <Link href="/sign_in">
+                <button className="bg-green-500 hover:bg-green-500 text-white font-bold py-2 px-4 rounded mb-5">
+                  sign in
+                </button>
+              </Link>
             </li>
-            <li>
-              <button>sign up</button>
-            </li>
+            <Link href="">
+              <li>
+                <button className="py-2 px-4 bg-green-500 text-white font-bold rounded">
+                  Sign Out
+                </button>
+              </li>
+            </Link>
           </ul>
         </div>
       </div>
