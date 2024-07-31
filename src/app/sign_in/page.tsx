@@ -11,6 +11,8 @@ const SignIn = () => {
         </div>
         <div className="mx-9">
           <form>
+            <label htmlFor="Uname" className="text-2xl">Username</label><br />
+            <input type="text" id="Uname" className="my-5 w-96 py-6 px-5 border-green border-2" /><br />
             <label htmlFor="Umail" className="text-2xl">
               Your Email
             </label>
@@ -19,7 +21,7 @@ const SignIn = () => {
               type="email"
               id="Umail"
               placeholder="example@gmail.com"
-              className="my-5 w-80 py-6 px-5 border-green border-2"
+              className="my-5 w-96 py-6 px-5 border-green border-2"
             />
             <br />
             <label htmlFor="Upassword" className="text-2xl">
@@ -30,7 +32,7 @@ const SignIn = () => {
               type="password"
               id="Upassword"
               placeholder="Enter your password"
-              className="my-5 w-80 py-6 px-5 border-green border-2"
+              className="my-5 w-96 py-6 px-5 border-green border-2"
             />
           </form>
         </div>
