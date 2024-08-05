@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="flex justify-between  bg-white text-gray-600 px-20">
+      <div className="flex justify-between  bg-green-500 text-gray-600 px-20">
         <div>
           <h1 className="font-bold text-5xl font-bold italic">MediCare</h1>
         </div>

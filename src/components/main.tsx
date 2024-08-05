@@ -8,7 +8,7 @@ function Main() {
           <h2 className="ml-8 w-1/2 mt-8 mb-8 text-3xl py-14">
             Discover your perfect care, Health is Wealth
           </h2>
-          <h1 className="text-8xl ml-8 text-green-500 font-bold">
+          <h1 className="text-8xl ml-8 text-green-900 font-bold">
             Get the nearest Medical Care Providers, Save Time!
           </h1>
 
@@ -21,7 +21,7 @@ function Main() {
           </div>
 
           <div className="py-14">
-            <button className=" ml-8 border-green border-2 bg-green-500 rounded w-80 mx-auto py-5 text-center text-white text-2xl hover:bg-white hover:text-black ">
+            <button className=" ml-8 border-green border-2 bg-green-900 rounded w-80 mx-auto py-5 text-center text-white text-2xl hover:bg-white hover:text-black ">
               Find Your Hospital
             </button>
           </div>

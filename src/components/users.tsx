@@ -4,8 +4,8 @@ const Users = () => {
   return (
     <>
       <div>
-        <div className="pt-24 pb-12">
-          <h1 className="text-5xl font-medium text-center text-green-600">
+        <div className="pt-18 pb-12">
+          <h1 className="text-5xl font-medium text-center text-green-900">
             What our users say
           </h1>
         </div>
