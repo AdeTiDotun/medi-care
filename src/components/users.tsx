@@ -10,8 +10,8 @@ const Users = () => {
           </h1>
         </div>
         {/* User's Testimony */}
-        <div className="flex px-10 gap-11 text-gray-500">
-          <div className="border-solid border-2 border-green-500 rounded-xl">
+        <div className="flex px-10 gap-11 text-gray-600">
+          <div className="border-solid border-2 border-green-900 rounded-xl">
             <p className="text-5xl px-10 pt-10">"</p>
             <p className="text-2xl px-10">
               Finding the right hospital has never been easier! With this
@@ -20,7 +20,7 @@ const Users = () => {
             </p>
             <h2 className="px-10 py-10">Name</h2>
           </div>
-          <div className="border-solid border-2 border-green-500 rounded-xl">
+          <div className="border-solid border-2 border-green-900 rounded-xl">
             <p className="text-5xl px-10 pt-10">"</p>
             <p className="text-2xl px-10">
               Finding the right hospital has never been easier! With this
@@ -29,7 +29,7 @@ const Users = () => {
             </p>
             <h2 className="px-10 py-10">Name</h2>
           </div>
-          <div className="border-solid border-2 border-green-500 rounded-xl">
+          <div className="border-solid border-2 border-green-900 rounded-xl">
             <p className="text-5xl px-10 pt-10">"</p>
             <p className="text-2xl px-10">
               Finding the right hospital has never been easier! With this
