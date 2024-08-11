@@ -3,9 +3,9 @@ import Image from "next/image";
 function Main() {
   return (
     <>
-      <div className="text-gray-500 flex gap">
-        <div className="w-1/2 ">
-          <h2 className="ml-8 w-1/2 mt-8 mb-8 text-3xl py-14">
+      <div className="text-gray-500 lg:flex gap">
+        <div className="lg:w-1/2 ">
+          <h2 className="ml-8 lg:w-1/2 mt-8 mb-8 text-3xl py-14">
             Discover your perfect care, Health is Wealth
           </h2>
           <h1 className="text-8xl ml-8 text-green-900 font-bold">

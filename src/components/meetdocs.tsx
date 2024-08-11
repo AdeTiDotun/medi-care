@@ -8,7 +8,7 @@ function Meetdocs() {
         <div className="py-14 text-center text-5xl font-bold text-green-900">
           <h1>Meet Our Doctors</h1>
         </div>
-        <div className="grid grid-cols-2">
+        <div className="grid lg:grid-cols-2">
           <div>
             <Image
               src="/Images/docgroup.jpg"
@@ -33,7 +33,7 @@ function Meetdocs() {
               collaboration and transparency.
             </h2>
             <div className="text-center">
-              <button className=" ml-8 border-green border-2 bg-white rounded w-80 mx-auto py-5 text-center text-black text-2xl hover:bg-green-500 hover:text-black ">
+              <button className=" ml-8 border-green border-2 bg-white rounded w-80 mx-auto mb-10 py-5 text-center text-black text-2xl hover:bg-green-500 hover:text-black ">
                 See All Doctors
               </button>
             </div>
