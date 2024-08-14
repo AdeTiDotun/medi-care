@@ -42,8 +42,6 @@ if (!user && !userSession) {
       <Users />
       <hr className="h-px my-4 mx-4 bg-gray-200 border-0 dark:bg-gray-300"></hr>
       <Services />
-
-      <SearchHospital />
     </>
   );
 }

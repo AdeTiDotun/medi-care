@@ -12,7 +12,7 @@ function SignUp() {
   const [createUserWithEmailAndPassword] =
     useCreateUserWithEmailAndPassword(auth);
 
-  const handleSignUp = async () => {
+  const handleSignUp = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     try {
       const res = await createUserWithEmailAndPassword(email, password);
@@ -58,7 +58,7 @@ function SignUp() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="my-5 w-96 py-6 px-5 border-green border-2"
-            />
+            /> <br />
             <button
               onClick={handleSignUp}
               className="border-green border-2 bg-green-500 rounded w-80 mx-auto py-5 text-center text-white text-2xl hover:bg-white hover:text-black "

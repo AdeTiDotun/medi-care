@@ -12,7 +12,7 @@ const Users = () => {
         {/* User's Testimony */}
         <div className="lg:flex px-10 gap-11 text-gray-600">
           <div className="border-solid border-2 border-green-900 rounded-xl my-10">
-            <p className="text-5xl px-10 pt-10">"</p>
+            <p className="text-5xl px-10 pt-10">&apos;</p>
             <p className="text-2xl px-10">
               Finding the right hospital has never been easier! With this
               website, I was able to locate a nearby hospital quickly and
@@ -21,7 +21,7 @@ const Users = () => {
             <h2 className="px-10 py-10">Name</h2>
           </div>
           <div className="border-solid border-2 border-green-900 rounded-xl my-10">
-            <p className="text-5xl px-10 pt-10">"</p>
+            <p className="text-5xl px-10 pt-10">&apos;</p>
             <p className="text-2xl px-10">
               Finding the right hospital has never been easier! With this
               website, I was able to locate a nearby hospital quickly and
@@ -30,7 +30,7 @@ const Users = () => {
             <h2 className="px-10 py-10 py-10">Name</h2>
           </div>
           <div className="border-solid border-2 border-green-900 rounded-xl my-10">
-            <p className="text-5xl px-10 pt-10">"</p>
+            <p className="text-5xl px-10 pt-10">&apos;</p>
             <p className="text-2xl px-10 py-10">
               Finding the right hospital has never been easier! With this
               website, I was able to locate a nearby hospital quickly and
