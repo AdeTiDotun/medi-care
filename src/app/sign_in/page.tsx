@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import {useSignInWithEmailAndPassword} from 'react-firebase-hooks/auth'
 import { auth } from "../../../firebase/config";
-import React from "react";
 import Link from "next/link";
 import { useRouter } from 'next/navigation';
 
