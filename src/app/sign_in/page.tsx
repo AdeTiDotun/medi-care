@@ -66,11 +66,6 @@ const SignIn = () => {
           </button><br />
           </form>
         </div>
-        <div className="mt-5 text-center">
-          < button className="border-2 border-black my-5 w-80 px-5 py-6 text-xl">
-            Sign in with Google
-          </button>
-        </div>
         <div className="text-center">
           <p>Don&apos;t have an account? <Link href="/sign_up">Sign Up</Link></p>
         </div>

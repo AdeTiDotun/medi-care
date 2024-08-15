@@ -5,12 +5,14 @@ import Link from "next/link";
 import { useState } from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "../../../firebase/config";
+import { useRouter } from 'next/navigation';
 
 function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [createUserWithEmailAndPassword] =
     useCreateUserWithEmailAndPassword(auth);
+    const router = useRouter()
 
   const handleSignUp = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
@@ -20,6 +22,7 @@ function SignUp() {
       sessionStorage.setItem("user", true.toString());
       setEmail("");
       setPassword("");
+      router.push('/')
     } catch (e) {
       console.error(e);
     }
