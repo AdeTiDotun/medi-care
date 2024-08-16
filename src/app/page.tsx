@@ -10,7 +10,6 @@ import Nav from "@/components/navbar";
 import Services from "@/components/services";
 import Users from "@/components/users";
 import Link from "next/link";
-import SearchHospital from "@/app/hospital/hospitalsearch";
 
 
 export default function Home() {
