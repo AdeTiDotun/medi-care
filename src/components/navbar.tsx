@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import SignIn from "@/app/sign_in/page";
-import SearchHospital from "./hospitalsearch";
 
 const Nav = () => {
   return (
@@ -20,7 +19,7 @@ const Nav = () => {
             <Link href="/about">
               <li>About</li>
             </Link>
-            <Link href="/hospital/hospitalsearch"> <li>Hospitals</li></Link>
+            <Link href="/hospital"> <li>Hospitals</li></Link>
            
             <li>
               <Link href="/sign_in">
