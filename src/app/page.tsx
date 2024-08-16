@@ -1,6 +1,5 @@
 'use client'
 import React from "react";
-import { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../firebase/config";
 import { useRouter } from "next/navigation";
@@ -9,7 +8,7 @@ import Meetdocs from "@/components/meetdocs";
 import Nav from "@/components/navbar";
 import Services from "@/components/services";
 import Users from "@/components/users";
-import Link from "next/link";
+
 
 
 export default function Home() {
