@@ -41,24 +41,24 @@ const SearchHospital: React.FC = () => {
   );
 
   return (
-    <div className="p-6 bg-green-50 flex flex-col items-center">
+    <div className="p-6 bg-green-50 flex flex-col items-center min-h-screen">
       <form
         onSubmit={(e) => {
           e.preventDefault();
           searchHospitals();
         }}
-        className="mb-6 w-full max-w-lg"
+        className="mb-6 w-full max-w-md mx-auto"
       >
         <input
           type="text"
           placeholder="Enter your location"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="mb-4 p-3 w-full text-lg border border-green-300 rounded"
+          className="mb-4 p-3 w-full text-lg border border-green-900 rounded-lg"
         />
         <button
           type="submit"
-          className="block w-full py-3 bg-green-500 text-white font-bold rounded hover:bg-green-600"
+          className="block w-full py-3 bg-green-900 text-white font-bold rounded-lg hover:bg-green-600"
         >
           Search
         </button>
@@ -66,11 +66,11 @@ const SearchHospital: React.FC = () => {
 
       {showResults && filteredHospitals.length > 0 && (
         <>
-          <div className="w-full max-w-lg grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+          <div className="w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
             {paginatedHospitals.map((hospital, index) => (
               <div
                 key={index}
-                className="border border-green-500 p-4 rounded-lg bg-white"
+                className="border border-green-900 p-4 rounded-lg bg-white"
                 style={{ paddingBottom: '20px' }} // Adjust padding-bottom as needed
               >
                 <h2 className="text-lg font-bold">{hospital.name}</h2>
@@ -80,18 +80,18 @@ const SearchHospital: React.FC = () => {
             ))}
           </div>
 
-          <div className="flex justify-between w-full max-w-lg">
+          <div className="flex justify-between w-full max-w-md mx-auto">
             <button
               onClick={() => setPage(page - 1)}
               disabled={page === 0}
-              className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 disabled:opacity-50"
+              className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 disabled:opacity-50"
             >
               Previous
             </button>
             <button
               onClick={() => setPage(page + 1)}
               disabled={(page + 1) * itemsPerPage >= filteredHospitals.length}
-              className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 disabled:opacity-50"
+              className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 disabled:opacity-50"
             >
               Next
             </button>
