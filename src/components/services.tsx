@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+
 
 function Services() {
   return (
@@ -19,10 +21,14 @@ function Services() {
 
         {/* Service 2 */}
         <div className="py-6 lg:py-14">
+
+          <Link href="/hospital">
+          
           <button className="border-green border-2 bg-green-900 rounded w-full py-6 text-center text-white text-xl lg:text-2xl hover:bg-white hover:text-black">
             Search Hospitals
             <p className="mt-2 text-sm lg:text-lg">Find the Best Hospitals near you</p>
           </button>
+          </Link>
         </div>
 
         {/* Service 3 */}
