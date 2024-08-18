@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Main() {
   return (
@@ -23,9 +24,11 @@ function Main() {
           </div>
 
           <div className="text-center lg:text-left">
-            <button className="border-green-900 border-2 bg-green-900 rounded px-8 py-4 text-white text-lg lg:text-xl font-bold hover:bg-white hover:text-green-900 transition-colors">
-              Find Your Hospital
-            </button>
+            <Link href="/hospital">
+              <button className="border-green-900 border-2 bg-green-900 rounded px-8 py-4 text-white text-lg lg:text-xl font-bold hover:bg-white hover:text-green-900 transition-colors">
+                Find Your Hospital
+              </button>
+            </Link>
           </div>
         </div>
 
