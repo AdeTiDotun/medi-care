@@ -9,21 +9,34 @@ import { useRouter } from 'next/navigation';
 const SignUp: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [createUserWithEmailAndPassword] =
-    useCreateUserWithEmailAndPassword(auth);
+  const [error, setError] = useState("");
+  const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(auth);
   const router = useRouter();
+
+  const validateEmail = (email: string) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
 
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError("");
+
+    if (!validateEmail(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
     try {
       const res = await createUserWithEmailAndPassword(email, password);
       console.log({ res });
       sessionStorage.setItem("user", true.toString());
       setEmail("");
       setPassword("");
-      router.push('/');
+      router.push('/sign_in');
     } catch (e) {
       console.error(e);
+      setError("Failed to create an account. Please try again.");
     }
   };
 
@@ -36,6 +49,7 @@ const SignUp: React.FC = () => {
 
       <div>
         <form onSubmit={handleSignUp} className="space-y-6">
+          {error && <p className="text-red-500 text-center">{error}</p>}
           <div>
             <label htmlFor="Umail" className="text-lg sm:text-xl block">
               Your Email
@@ -69,12 +83,6 @@ const SignUp: React.FC = () => {
             Sign Up
           </button>
         </form>
-      </div>
-
-      <div className="mt-6 text-center">
-        <button className="w-full py-3 border-2 border-black text-lg rounded-md">
-          Sign up with Google
-        </button>
       </div>
 
       <div className="mt-4 text-center">

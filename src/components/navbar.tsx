@@ -68,7 +68,7 @@ const Nav = () => {
             </Link>
             <Link href="">
               <button className="bg-green-900 hover:bg-green-700 text-white font-bold py-2 px-6 rounded">
-                Sign Out
+                Sign Up
               </button>
             </Link>
           </div>
